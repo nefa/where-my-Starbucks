@@ -1,0 +1,16 @@
+{
+  "name": "where-my-starbucks-at",
+  "version": "1.0.0",
+  "description": "Starbucks coordinates poc",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Nefa",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.21.1",
+    "csv-parser": "^3.0.0",
+    "haversine-distance": "^1.2.1"
+  }
+}
