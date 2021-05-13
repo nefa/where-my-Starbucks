@@ -1,6 +1,3 @@
-const csv = require('csv-parser');
-const fs = require('fs');
-const https = require('https');
 const axios = require('axios');
 
 const {csvToList, calculateDistance, orderByProximity} = require('./distanceCalculator.js');
@@ -48,7 +45,9 @@ async function initProgram ({latitude, longitude, resource}) {
     const nearestDistances = orderByProximity(distances);
 
     // output
-    console.log(nearestDistances)
+    nearestDistances.slice(0,3).forEach(({name, distance}) => {
+      console.log(name,',', distance.toFixed(4))
+    })
 
   } catch(err) {
     console.error(err);

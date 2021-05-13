@@ -20,7 +20,7 @@ class DistanceCalculator {
         longitude: currentLocation.longitude
       });
 
-      return {name, distance/*: distance * 0.000621371192 //transform to miles */};
+      return {name, distance /** 0.000621371192 //transform to miles */};
     });
   }
 
